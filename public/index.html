@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google font for name -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dancing+Script&family=Red+Hat+Mono:wght@300&family=Staatliches&family=Unica+One&display=swap" rel="stylesheet">
+    <!-- ----- -->
+
+    <!-- aos library link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--  meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <!-- toggle switch  -->
+    <div class="SW">
+    <label class="switch">
+      <input type="checkbox" id="switch" onclick="display()" />
+      <span class="slider round"></span>
+    </label>
+    </div>
+
+    <!-- name section -->
+    <div id="name" class="name">
+      <div class="fName" id="fName" style="display: none">Bhavneet Kaur</div>
+    </div>
+    <div id="altname" class="altname">
+      <div class="faltName" id="faltName" style="display: block">
+        Bhavneet Kaur
+      </div>
+    </div>
+
+    
+    <!-- navbar -->
+
+    <input type="checkbox" id="open">
+    <label for="open" id="navLabel"></label>
+    
+    
+    <nav>     
+      <div class="nav-menu">
+        <ul>
+          <div class="bottom-bar"></div>
+          <li><a id="h" href="#">Home</a></li>
+          <li><a id="a" href="#about">About</a></li>
+          <li><a id="p" href="#altprojects">Projects</a></li>
+          <li><a id="s" href="#altskills">Skills</a></li>
+          <li><a id="c" href="#altContact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- about seciton -->
+    <div class="about" id="about">
+      <p id="abt">
+     Hi there! I am Bhavneet. I
+     <p class="animate-text">
+       <span class="text-in">
+         Design Webpages
+       </span>
+       <span class="text-in">
+         Play Piano
+       </span>
+       <span class="text-in">
+         Write Poems
+       </span>
+       <span class="text-in">
+         Love Ice Cream
+       </span>
+       <span class="text-in">
+         am an Undergrad
+       </span>
+
+     </p>
+    </p>
+    </div>
+    <br>
+    <div id="projects" class="projects">Projects</div>
+    <div id="altprojects" class="altprojects">Projects</div>
+
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          
+          <h3 id='project heading 1'>Escape Room</h3>
+          <p id="p1">A cool CLI game <br> built in Asciimatics</p>
+          <a href="./er.html" target="_blank">Read More</a>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card">
+        <div class="content">
+         
+          <h3 id='project heading 2'>Łìmøn</h3>
+          <p id="p2">A discord bot that <br> greets and sends <br> edgy quotes</p>
+          <a href="./lim.html" target="_blank">Read More</a>
+        </div>
+      </div>
+      <!--  -->
+      <div class="card">
+        <div class="content">
+          
+          <h3 id='project heading 3'>Evergreen</h3>
+          <p id="p3">An E-commerce web<br> app for uplifting<br>  farmers</p>
+          <a href="./evg.html" target="_blank">Read More</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bar" id="bar"></div>
+    <div class="altbar" id="altbar"></div>
+
+    <!-- skills -->
+    <div id="skills" class="skills"> Tech Skills</div>
+    <div id="altskills" class="altskills">Tech Skills</div>
+    <div class='displaySkills'>
+      <li>
+      <h3>HTML5</h3>
+      <span class="progbar">
+        <span class="html"></span>
+      </span>
+      </li>
+      <li>
+      <h3>CSS3</h3>
+      <span class="progbar">
+        <span class="css"></span>
+      </span>
+      </li>
+      <li>
+      <h3>VANILLA SCRIPT</h3>
+      <span class="progbar">
+        <span class="vanjs"></span>
+      </span>
+      </li>
+      <li>
+      <h3>NODE JS</h3>
+      <span class="progbar">
+        <span class="nodejs"></span>
+      </span>
+      </li>
+      <li>
+      <h3>EXPRESSS JS</h3>
+      <span class="progbar">
+        <span class="expressjs"></span>
+      </span>
+      </li>
+      <li>
+      <h3>PURE PYTHON</h3>
+      <span class="progbar">
+        <span class="purepy"></span>
+      </span>
+      </li>
+      <li>
+      <h3>PYTHON FOR DATA SCIENCE</h3>
+      <span class="progbar">
+        <span class="dspy"></span>
+      </span>
+      </li>
+      <li>
+      <h3>TUI IN PYTHON (blessed and asciimatics)</h3>
+      <span class="progbar">
+        <span class="tuipy"></span>
+      </span>
+      </li>
+      <li>
+      <h3>C++</h3>
+      <span class="progbar">
+        <span class="cpp"></span>
+      </span>
+      </li>
+      <li>
+      <h3>CRYPTOGRAPHY</h3>
+      <span class="progbar">
+        <span class="crypto"></span>
+      </span>
+      </li>
+    </div>
+<p id="space">
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </p>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </p>
+
+    <!-- contact -->
+    <div id="Contact" class="Contact">Contact</div>
+    <div id="altContact" class="altContact">Contact</div>
+<div class="contact" id="connect">
+      <form action="https://formsubmit.co/bhavneetkaurkhalsa@gmail.com" method="POST">
+        <ul class="contactItems">
+        <li >
+          <label for="name">Name</label>
+          <br>
+          <br>
+          <input type="text" id="username" name="name">
+        </li>
+        <li >
+          <label for="email">Email/Contact no.</label>
+          <br>
+          <br>
+          <input type="text" id="email" name="email">
+        </li> 
+        <li>
+        <label for="message">Say Hi :)</label>
+        <br>
+        <br>
+        <textarea type="text" id="message" name="message" rows="1"></textarea>
+        </li>
+      </ul>
+      <div class="submit">
+        <button id="submitBtn" ><ion-icon name="paper-plane"></ion-icon></button>
+        </div>
+      </form>
+</div>
+    <!-- free scroll -->
+    <p id="space">
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </p>
+
+    <div class="greet">
+      <p id="day"><span class="animateThis"></span></p>
+    </div>
+    
+    <!-- free scroll -->
+    <p id="space">
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </p>
+
+    <!-- footer -->
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+
+        </div>
+      <ul class="profiles" id="profiles">
+        <li>
+          <a href="https://github.com/Bhavneet1492"><ion-icon name="logo-github" target="_blank"></ion-icon></a>
+        </li>
+        <li>
+          <a href="https://dribbble.com/blanc_sapphire?onboarding=true" target="_blank"><ion-icon name="logo-dribbble"></ion-icon></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/bhavneetkaur_14/" target="_blank"
+            ><ion-icon name="logo-instagram"
+              ></a>
+        </li>
+        <li><a href="https://brunetteconfection.tumblr.com/" target="_blank"><ion-icon name="logo-tumblr"></ion-icon></a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/bhavneet-kaur-khalsa-8157a21ba/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        </li>
+      </ul>
+      <ul class="note">
+          <li>What do you think?</li>
+      </ul>
+      <ul class="rxn">          
+          <li><button id="cool" class="cool">cool<br><ion-icon name="glasses" ></ion-icon></button></li>
+          <li><button id="hot" class="hot">hot<br><ion-icon name="flame"></ion-icon></button></li>
+      </ul>
+      <p>©2021 Bhavneet Kaur&nbsp;&nbsp;|&nbsp;&nbsp;All rights reserved</p>
+    </footer>
+
+    <!-- including js file -->
+    <script src="logic.js" type="text/javascript"></script>
+    <!-- --- -->
+
+    <!-- including aos library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- including icons -->
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <!-- including vanilla tilt js -->
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+      // tilt on hover animaiton
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+
+<!-- code embed -->
+
+<!-- scroll animation -->
+
+<!-- greet -->
+<script>
+  let day;
+  let list;
+  const s=['super','sweet','supreme','superb','sunny','sugary','sublime','starry','spicy','soulful','smiling','sleepy','serene','sassy','safe']
+  const m=['marvellous','motivating','merry','magnetic','magical','magnificent','mellow','melodic','memorable','mighty','mirthful','miraculous','mystic','musical']
+  const t=['tremendous','timeless','tasty','tangy','terrific','toothsome','tranquil','touchy','treasured','tropical','tuneful','twinkly','talented']
+  const th=['thankful','thick','thoughtful','thrilling','thrifty','thumping']
+  const w=['windy','wonderful','wholesome','wiggly','witty','wishful','wintery','wondrous','warm','wealthy','well','winning','wise','worthwhile','wispy','wobbly','wild']
+  const f=['fine','fabulous','fantastic','fair','fun','friendly','fancy','facile','fascinating','fresh','fashionable','fawning','fervid','fierce','fragrant']
+  switch (new Date().getDay()){
+    case 0:
+      day="Sunday"
+      list=s;
+      break;
+    case 1:
+      day="Monday"
+      list=m;
+      break;
+    case 2:
+      day="Tuesday"
+      list=t;
+      break;
+    case 3:
+      day="Wednesday"
+      list=w;
+      break;
+    case 4:
+      day="Thursday"
+      list=th;
+      break;
+    case 5:
+      day="Friday"
+      list=f;
+      break;
+    case 6:
+      day="Saturday"
+      list=s;
+      break;
+  }
+const adj=document.getElementById("day")  
+adj.innerHTML=`Have a <span class="animateThis"> ${list[0]}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${day}!`
+  let i = 1;                  //  set your counter to 0
+
+function myLoop() {         //  create a loop function
+  setTimeout(function() {   //  call a 3s setTimeout when the loop is called
+
+    adj.innerHTML=`Have a <span class="animateThis"> ${list[i]}</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${day}!`   //  your code here
+    i++;                    //  increment the counter
+    if (i < list.length) {           //  if the counter < 15, call the loop function
+      myLoop();             //  ..  again which will trigger another 
+    }         
+    if(i>=list.length){
+      i=0;
+      myLoop()
+    }              //  ..  setTimeout()
+  }, 2000)
+}
+
+myLoop();   
+</script>
+
+
+  </body>
+</html>
