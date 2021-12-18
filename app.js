@@ -14,15 +14,15 @@ app.get("/", (req, res) => {
 app.post("/", (req, res) => {
   console.log(req.body);
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    service: "hotmail",
     auth: {
-      user: "evergreen24712@gmail.com",
-      pass: "account@24712",
+      user: "bhavneetkaurkhalsa@outlook.com",
+      pass: "ignite@1234",
     },
   });
   const mailOptions = {
     from: req.body.email,
-    to: "evergreen24712@gmail.com",
+    to: "bhavneetkaurkhalsa@outlook.com",
     subject: `Message from ${req.body.email}`,
     text:
       req.body.message + `\n------------sent by------------\n${req.body.name}`,
