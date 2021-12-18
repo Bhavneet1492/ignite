@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const nodemailer = require("nodemailer");
-const PORT = 5000;
+// const PORT = 5000;
 const { request } = require("express");
 
 // MIDDLEWARE
@@ -38,6 +38,6 @@ app.post("/", (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("server listening on port 5000...");
 });
